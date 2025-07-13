@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wall_clock.css">
+</head>
+<body>
+    <button ></button>
+    <div id="clock">
+
+        <div class="clk" id="hour">h</div>
+        <div class="clk" id="min">m</div>
+        <div class="clk" id="sec">s</div>
+    </div>
+    
+</body>
+<script>
+    var ho=document.getElementById("hour");
+    var mi=document.getElementById("min");
+    var se=document.getElementById("sec");
+
+    
+    /*var har_sec=0;
+    function sec_start(){
+        console.log(har_sec);
+        har_sec= 30+har_sec;
+        
+        var har_sec=parseInt(har_sec+30);
+        mi.style.transform=`rotate(${parseInt(har_sec)}deg)`;
+        
+    
+    }
+    
+    setInterval(sec_start,1000)
+    */
+    var count_min=0;
+    setInterval(()=>{
+        count_min=count_min+6;
+        console.log(count_min)
+        mi.style.transform=`rotate(${parseInt(count_min)}deg)`;
+    
+    },60000)
+    
+    
+    
+    var count_sec=0;
+    setInterval(()=>{
+        count_sec=count_sec+6;
+        console.log(count_sec)
+        se.style.transform=`rotate(${parseInt(count_sec)}deg)`;
+        
+        
+        
+    },1000)
+    
+    var count_hour=0;
+    setInterval(()=>{
+        count_hour=count_hour+12;
+        console.log(count_hour)
+        ho.style.transform=`rotate(${parseInt(count_hour)}deg)`;
+        
+        
+        
+    },600000)
+    
+
+
+</script>
+</html>
