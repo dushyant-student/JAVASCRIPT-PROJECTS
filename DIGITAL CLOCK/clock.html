@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body onload="hr_start()">
+    <div id="clock">
+        <div id ="row1">
+        <div id="hr">hr
+            
+        </div>
+        <div id="min">min
+        </div>
+        <div id="sec">sec
+            
+        </div>
+    </div>
+    <div id="row2">
+    <h2>hours</h2>
+    <h2>minutes</h2>
+    <h2>sec</h2>
+    </div>
+    </div>
+    
+</body>
+<script type="text/javascript">
+    document.getElementById("body").addEventListener("onload",hr_start);
+
+    function hr_start () {
+        var da=new Date() ;
+        var hr=da.getHours ();
+        var mi=da.getMinutes ();
+        var sec=da.getSeconds ();
+        if (sec < 10 ){
+            document.getElementById("sec").innerText=("0"+sec);
+            
+        } 
+        else if(mi <10 ){
+            document.getElementById("min").innerText=("0"+mi);
+        }
+        else if (sec< 10){
+        document.getElementById("hr").value=("0"+hr);
+        }
+        
+        else {
+            document.getElementById("hr").innerText=hr;
+            document.getElementById("min").innerText=mi;
+            document.getElementById("sec").innerText=sec;
+            //document.getElementsByTagName("h1")[2].innerText="sec Am " 
+
+        
+    }setTimeout(hr_start , Infinity);
+}
+
+
+
+</script>
+</html>
