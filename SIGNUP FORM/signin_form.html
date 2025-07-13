@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <link rel="stylesheet" href="signin_form.css"/>
+    <div class="main">
+        <form id="f1">
+        <h1 style="font-weight:bold ; font-size:35px;">Signin</h1>
+        <br/>
+        <input type="name" placeholder="1_Name"/> 
+        <input type="mail" placeholder="E-mail" />
+        <input type="password" placeholder="Password.."  />
+        <diV class="new_but">
+        <button type="reset" id="rst" ; style="width:60px ;height:25px ;color:white; background:red ;">clear</button>
+        <button type="button" ; onclick="nxt()" style="width:60px ;height:25px ;color:white">SAVE</button>
+        </diV>
+    </form>
+    
+    <form id="f2">
+    <h1 style="font-weight:bold ; font-size:35px;">About you</h1>
+    <br/>
+    <input type="name" placeholder="country"/> 
+    <input type="mail" placeholder="place" />
+    <input type="password" placeholder="Address"  />
+        <diV class="new_but">
+            <button type="button" onclick="pre()" style="width:60px ;height:25px ;color:white; background:red ;">previous</button>
+            <button type="button" onclick="nxt_1()" style="width:60px ;height:25px ;color:white;border-radius:4px">SAVE</button>
+        </div>
+</form>
+
+    <form id="f3" >
+    <h1 style="font-weight:bold ; font-size:35px;">Personal info</h1>
+    <br/>
+    <input type="name" placeholder="Education"/>
+    <input type="mail" placeholder="Age" />
+    <input type="password" placeholder="Gender"  />
+    <diV class="new_but">
+    <button type="button" onclick="pre_1()" ; style="width:60px ;height:25px ;color:white; background:red ;">previous</button>
+    <button type="submit" id="sbm" onclick="nxt()" style="width:60px ;height:25px ;color:black ;border-radius:4px;">submit</button>
+    </diV>
+</form>
+</div>
+
+    
+</body>
+<script type="text/javascript">
+    var frm1=document.getElementById("f1");
+    var frm2=document.getElementById("f2");
+    var frm3=document.getElementById("f3");
+    function nxt(){
+        frm1.style.left="-100%";
+        frm2.style.left="0px";
+
+    }
+    function pre(){
+        frm1.style.left="0px";
+        frm2.style.left="100%";
+    }
+    function nxt_1(){
+        frm2.style.left="-100%";
+        frm3.style.left="0px";
+    }
+
+    function pre_1(){
+        frm3.style.left="100%";
+        frm2.style.left="0px";
+    }
+</script>
+</html>

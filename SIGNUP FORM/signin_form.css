@@ -1,0 +1,86 @@
+
+*{
+    margin: 0px ;
+    padding:0px 
+    
+
+}
+body{
+    height: 600px;
+    background:linear-gradient(120deg,rgb(120, 231, 120),red ) ;
+    display:flex;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    text-align: start;
+    
+
+
+}
+.main{
+
+    padding: 60px 40px ;
+    border-radius: 10px ;
+    height:400px;
+    width: 300px ;
+    position: relative;
+    background: transparent;
+    background: linear-gradient(90deg,white,yellow );
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center ;
+    overflow: hidden;
+    
+    
+}
+.main form{
+    padding-top: 45px ;
+    padding-left: 40px ;
+    position: absolute; 
+    top:0px;
+    
+}
+#f1{
+    position: absolute;
+    transition: 0.6s ;
+    top: 0px ;
+    left:0px;
+}
+#f2,#f3{
+    position:absolute;
+    transition: 0.6s;
+    left: 100%;
+
+}
+
+.main form input{
+    padding: 24px 7px ;
+    border-style: none ;
+    background-color: transparent black ;
+    align-items: center;
+    border-bottom: 4px solid black ;
+    display: flex ;
+    margin-left:47px;
+    background: transparent; 
+    
+    
+
+
+}
+.new_but{
+    width:280px ;
+    height: 160px ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+
+.main button{
+    font-size:13px ;
+    font-weight: bold ;
+    background-color: skyblue;
+    border: 2px solid black;
+    border-radius: 2px ;
+}
