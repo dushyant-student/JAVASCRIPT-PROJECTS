@@ -1,0 +1,45 @@
+*{margin:0px;
+padding:0px;
+}
+body{
+    background-color: black ;
+    display:flex;
+    justify-content: center ;
+    align-items: center ;
+
+}
+.cont{
+    height: 600px;
+    width: 1500px ;
+    background-color: white ;
+    border: 20px ;
+    display:flex;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    
+#c1{
+    height:60px ;
+    width:300px ;
+    background-color: red;
+    border: 2px solid rgb(123,26,234) ;
+    border-radius: 24%;
+    position: relative; 
+    
+    
+}
+#circle{
+    height:300px;
+    width:300px;
+    background-color: aqua;
+    border: 1px solid blue ;
+    border-radius: 50%;
+    
+    
+    
+}
+#c1:hover{
+    transform: rotate(x 290deg);
+    rotate: x 290deg;
+    transition: 3s ;
+}
